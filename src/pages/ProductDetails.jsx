@@ -1,9 +1,12 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 const ProductDetails = () => {
+  // useParams();
+  const { username } = useParams();
   return (
     <>
-      <h1>this is a page for a specific product</h1>
+      <h1>this is a page for a {username} product</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
         deleniti dolore, ullam, laborum numquam magnam fuga quidem aspernatur
